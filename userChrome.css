@@ -16,18 +16,12 @@ position:relative!important;
 top:89px!important;
 transition:all .2s ease!important;
 border-right:2px solid #0088eeff!important;
-border-top:1px solid transparent!important;
 z-index:2!important;
-background:#353535!important
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
-background:#fff!important;
-border:0 solid #fff!important;
-display:block;
 position:relative;
 height:100.25%!important;
-overflow-x:hidden!important;
 top:-1px
 }
 
