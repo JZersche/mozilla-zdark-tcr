@@ -249,7 +249,6 @@ transition:background-position 999ms ease-out
 }
 
 #tablist-wrapper {
-display:block;
 height:565px!important;
 width:225px!important;
 flex-direction:column;
