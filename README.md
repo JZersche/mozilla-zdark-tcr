@@ -7,7 +7,7 @@
 <b>Hovered Tab Background: </b><a href="http://www.color-hex.com/color/#067cf1">#067cf1</a> / <a href="http://www.color-hex.com/color/#246ca2">#246ca2</a>
 
 <h3>Requirements:</h3>
-<pre><a href="https://ftp.mozilla.org/pub/firefox/nightly/2017/11/2017-11-09-22-01-04-mozilla-central/firefox-58.0a1.en-US.win64.installer.exe">Firefox 57+</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/tab-center-redux">Tab Center Redux(Add-on)</a> </pre>
+<pre><a href="https://ftp.mozilla.org/pub/firefox/nightly/2017/11/2017-11-09-22-01-04-mozilla-central/firefox-58.0a1.en-US.win64.installer.exe">Firefox 57+</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/tab-center-redux">Tab Center Redux(Add-on) [Optional]</a> </pre>
 
 <h3> Instructions </h3>
 <a href="https://addons.mozilla.org/en-US/firefox/addon/tab-center-redux">
