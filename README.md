@@ -18,5 +18,6 @@ Once installation is successfully completed, type <b>about:addons</b> into the a
 1. Enable the Dark Theme
 2. Set Compact to 'Always'
 3. Enable Compact Pinned Tabs
-
-https://gist.github.com/JZersche/192a7eceac601921a8730dde967cf422
+4. Navigate to here: https://gist.github.com/JZersche/192a7eceac601921a8730dde967cf422
+5. Place userChrome.css in %APPDATA%\Mozilla\Firefox\Profiles\[YourProfileID].dev-edition-default\chrome\
+6. Place the zDark Theme.css Custom CSS code in the Custom Stylesheet section of the Add-on settings page.
