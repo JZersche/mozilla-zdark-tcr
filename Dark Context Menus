@@ -1,3 +1,4 @@
+/* Add this to userChrome.css */
 
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
 
