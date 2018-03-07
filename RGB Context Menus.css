@@ -1,87 +1,82 @@
-/* zDark Context Menus */
-.PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
-  padding:0 10px!important;
+@namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
 
-/* Zoom Button 100% */
-background-color:#f00!important; 
+/* zDark Context Menus */
+
+.PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
+padding:0 10px!important;
+background-color:red!important;
 border:0 solid #ffe1e1!important;
-border-radius:6px!important;
+border-radius:6px!important
 }
-menupopup:not([id="BMB_bookmarksPopup"]),
-#BMB_bookmarksPopup menupopup[placespopup=true] > hbox
-{
-  background-color: #f00 !important; /* File Menu Items Background */
+
+/* Color 1 */ menupopup:not([id="BMB_bookmarksPopup"]),#BMB_bookmarksPopup menupopup[placespopup=true] > hbox {background-color:RED!important}
+
+/* Color 2 */ :root {--uc-dark-bkgnd-color:GREEN!important;}
+
+/* Color 3 */ .panel-subview-body {overflow-y:auto;overflow-x:hidden;-moz-box-flex:1;padding:6px 0;background:BLUE;}
+
+/* Color 4 */ :root {
+--uc-border-color: CYAN !important} .panel-subviews,#mainPopupSet menupopup,
+#bookmarks-menu-button menu menupopup > hbox,
+.search-panel-header.search-panel-current-engine,
+.search-panel-current-input,panelview,.PanelUI-subView {
+border-top:3px solid CYAN !important}
+
+.panel-subviews,#mainPopupSet menupopup,#bookmarks-menu-button menu menupopup > hbox,.search-panel-header.search-panel-current-engine,.search-panel-current-input,panelview,.PanelUI-subView {
+background-color:var(--uc-dark-bkgnd-color)!important;
 }
-:root {
---uc-dark-bkgnd-color: #0f0 !important; /* Context Menu Background Color */ 
---uc-border-color:cyan !important; /* ☰ Menu Border Color */
-}
-.panel-subview-body {
-  overflow-y: auto;
-  overflow-x: hidden;
-  -moz-box-flex: 1;
-  padding: 6px 0;
-/*background-image: linear-gradient(to bottom right, #31363b 50%, #06a 50%) !important;*/
-background: #00f; /* ☰ Menu Background */
-}
-/* ☰ Menu Item Background Icon Fill Color */
+
 panelview {
 color:#fff!important
 }
-/* Context Menu Item Background Color and ☰ Menu Item Background HOVER */
-.subviewbutton:hover,
-#PanelUI-contents toolbarbutton:hover {
-background-color:#0066aa!important
+
+.subviewbutton:hover,#PanelUI-contents toolbarbutton:hover {
+background-color:#06a!important
 }
-menupopup:not([id="BMB_bookmarksPopup"]),
-#BMB_bookmarksPopup menupopup[placespopup=true] > hbox
-{
-  -moz-appearance: none !important;
-  border-radius: 0px !important;
-  font-weight: normal !important;
-  border: 0px dotted #0066aacc !important;
-  border-left: 0 !important;
-  border-top: 0px solid #09f !important;border-radius:0px!important;
-  box-shadow: 0 0px 0 rgba(0,0,0,0) inset,
-        0 0 6px hsla(0,0%,0%,0) !important;
-  background-image: linear-gradient(to bottom,
-                #5555,
-                #2222
-                ) !important;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-}menu, menuitem, .splitmenu-menuitem{
--moz-appearance: none !important /* Allow Blue Background for File Menu Items*/; 
-color: rgb(165, 165, 165); /* File Menu Item Color */;
+
+menupopup:not([id="BMB_bookmarksPopup"]),#BMB_bookmarksPopup menupopup[placespopup=true] > hbox {
+-moz-appearance:none!important;
+border-radius:0!important;
+font-weight:400!important;
+border:0 dotted #0066aacc!important;
+border-left:0!important;
+border-top:0 solid #09f!important;
+border-radius:0!important;
+box-shadow:0 0 0 rgba(0,0,0,0) inset,0 0 6px hsla(0,0%,0%,0)!important;
+background-image:linear-gradient(to bottom,#5555,#2222)!important;
+padding-bottom:0!important;
+padding-top:0!important
 }
-/* Context Menu Item (Not Submenu) Background Color */
+
+menu,menuitem,.splitmenu-menuitem {
+-moz-appearance:none!important;
+color:#a5a5a5
+}
+
 #mainPopupSet menupopup menuitem:hover {
-/* background-color:#06a!important; */
-background-color:#06a!important;
+background-color:#06a!important
 }
-/* Context Menu Item (Submenu) Background Color */
+
 #mainPopupSet menupopup menu:hover {
-/*background-color:#09f!important;*/
 background-color:#09f!important
-}
-.panel-subviews,#mainPopupSet menupopup,#bookmarks-menu-button menu menupopup > hbox,.search-panel-header.search-panel-current-engine,.search-panel-current-input,panelview,.PanelUI-subView {
-background-color:var(--uc-dark-bkgnd-color)!important;
-border-top:3px solid #282c30 !important; /* ☰ Menu Border */
 }
 
 #widget-overflow-mainView > .panel-subview-body > toolbarseparator,.PanelUI-subView menuseparator,.PanelUI-subView toolbarseparator,.cui-widget-panelview menuseparator,.cui-widget-panel toolbarseparator {
 margin:0
 }
 
-:root {--browser-background:#38383d--uc-light-bkgnd-color:#0651a3cc; --uc-active-color:#404040; --uc-text-color:#c3c6c9;}
+:root {
+--browser-background:#38383d--uc-light-bkgnd-color:#06a;
+--uc-active-color:#404040;
+--uc-text-color:#c3c6c9
+}
 
 tabbrowser tabpanels {
 background-color:var(--browser-background)!important
 }
 
 #context-navigation {
-/*var(--uc-dark-bkgnd-color)*/
-background-color:transparent!important;
+background-color:transparent!important
 }
 
 #sidebar-box {
@@ -128,7 +123,7 @@ background-color:unset!important
 }
 
 #PanelUI-footer toolbarbutton:not(#PanelUI-quit):hover {
-background-color:#f00!important
+background-color:red!important
 }
 
 #PanelUI-footer *,panelview toolbarbutton.subviewbutton .toolbarbutton-text,#downloadsFooter,#customizationui-widget-panel label,.autocomplete-richlistitem .ac-title,#widget-overflow-list toolbarbutton,#mainPopupSet menupopup menuitem,#mainPopupSet menupopup menu,#bookmarks-menu-button menu menupopup,#PopupSearchAutoComplete .autocomplete-tree.plain.search-panel-tree,#PanelUI-contents toolbarbutton,#sidebar-switcher-target,#alltabs_containersTab {
@@ -141,13 +136,15 @@ border:none!important
 
 #alltabs_containersMenuTab {
 -moz-appearance:none!important;
-background-color:transparent!important;list-style-image: none !important;
+background-color:transparent!important;
+list-style-image:none!important
 }
 
 #placesContext,#contentAreaContextMenu,#contentAreaContextMenu menupopup,#page-action-mainView,.textbox-contextmenu {
 -moz-appearance:none!important;
 background-color:var(--uc-dark-bkgnd-color)!important;
-border:none;list-style-image: none !important;
+border:none;
+list-style-image:none!important
 }
 
 #placesContext menuitem,#contentAreaContextMenu menuitem,#contentAreaContextMenu menu,.textbox-contextmenu menuitem {
@@ -161,12 +158,12 @@ height:16px
 }
 
 #placesContext menuitem[disabled="true"],#contentAreaContextMenu menuitem[disabled="true"],#mainPopupSet menupopup menuitem[disabled="true"],#BMB_bookmarksPopup menuitem[disabled],.textbox-contextmenu menuitem[disabled] {
-color:white!important;
+color:#fff!important
 }
 
 #placesContext menuitem:hover,#contentAreaContextMenu menuitem:hover,#contentAreaContextMenu menu:hover,#contentAreaContextMenu menu[open],.textbox-contextmenu menuitem:hover {
-background-color:transparent /* Right Click Menu Hover Ghost Background */;
-border:none;
+background-color:transparent;
+border:none
 }
 
 .autocomplete-richlistbox {
@@ -183,13 +180,13 @@ color:var(--uc-text-color)!important
 }
 
 .search-panel-one-offs,.downloadsPanelFooterButton:not(:hover),#overflowMenu-customize-button:not(:hover) {
-background-color:white!important
+background-color:#fff!important
 }
 
 menuseparator {
 -moz-appearance:none;
 padding:0;
-border-top:0px solid #333;
+border-top:0 solid #333;
 border-bottom:0 solid #048
 }
 
@@ -209,81 +206,58 @@ menuitem[default="true"] {
 font-weight:400!important
 }
 
-menu[_moz-menuactive="true"],
-menuitem[_moz-menuactive="true"],
-.splitmenu-menuitem[_moz-menuactive="true"]
-{
-  margin-bottom: 0px;
-  border-radius: 0;
-  background-color: #06a /* Hover Background for File Menu Items */!important;
-  color: rgb(225, 225, 225) !important;
-  font-size: 12px !important;
+menu[_moz-menuactive="true"],menuitem[_moz-menuactive="true"],.splitmenu-menuitem[_moz-menuactive="true"] {
+margin-bottom:0;
+border-radius:0;
+background-color:#06a!important;
+color:#e1e1e1!important;
+font-size:12px!important
 }
 
-menu[disabled="true"],
-menuitem[disabled="true"],
-.splitmenu-menuitem[disabled="true"],
-menu[_moz-menuactive="true"][disabled="true"],
-menuitem[_moz-menuactive="true"][disabled="true"],
-.splitmenu-menuitem[_moz-menuactive="true"][disabled="true"],
-toolbarbutton[disabled="true"] 
-{
-  color: rgb(90, 90, 90) !important; display:none !important /* Hide Grayed Out - Disabled Menu Items */;
+menu[disabled="true"],menuitem[disabled="true"],.splitmenu-menuitem[disabled="true"],menu[_moz-menuactive="true"][disabled="true"],menuitem[_moz-menuactive="true"][disabled="true"],.splitmenu-menuitem[_moz-menuactive="true"][disabled="true"],toolbarbutton[disabled="true"] {
+color:#5a5a5a!important;
+display:none!important
 }
 
-menupopup menuitem[_moz-menuactive="true"][disabled="true"]
-{
-  background-color: rgb(100, 100, 100) !important;
+menupopup menuitem[_moz-menuactive="true"][disabled="true"] {
+background-color:#646464!important
 }
 
-.chromeclass-menubar
-{
-  padding-bottom: 0px !important;
-  border-bottom: 0px solid transparent !important;
+.chromeclass-menubar {
+padding-bottom:0!important;
+border-bottom:0 solid transparent!important
 }
 
-menuitem[default="true"]
-{
-  font-weight: bold !important;
+menuitem[default="true"] {
+font-weight:700!important
 }
 
-menuitem[label="(Empty)"],
-menuitem[label="(Empty)"][_moz-menuactive="true"]
-{
-  -moz-appearance: none !important;
-  color: rgb(191, 117, 43) !important;
-  background-color: transparent !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-border:1px solid red !imporant;
+menuitem[label="(Empty)"],menuitem[label="(Empty)"][_moz-menuactive="true"] {
+-moz-appearance:none!important;
+color:#bf752b!important;
+background-color:transparent!important;
+min-height:20px!important;
+max-height:20px!important;
+border:1px solid red !imporant
 }
 
-#clearcache-menuitem
-{
-  color: red !important;
+#clearcache-menuitem {
+color:red!important
 }
-
-
-
 
 menu,menuitem,menucaption {
 -moz-appearance:menuitem;
 -moz-box-align:center;
-background: transparent !important;
+background:transparent!important
 }
 
-.panel-arrow[side="top"],
-.panel-arrow[side="bottom"] {
-/*  list-style-image: var(--panel-arrow-image-vertical,
-                        url("chrome://global/skin/arrow/panelarrow-vertical-themed.svg"));
-*/
-  opacity: 0;
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
+.panel-arrow[side="top"],.panel-arrow[side="bottom"] {
+opacity:0;
+position:relative;
+margin-left:10px;
+margin-right:10px
 }
 
-#contentAreaContextMenu > :-moz-any(menu), .menu-iconic-left {}
-#contentAreaContextMenu > :-moz-any(menuitem), .menu-iconic-left {} 
-
-.panel-subviews, #mainPopupSet menupopup {border:0px solid red !important;}
+.panel-subviews,#mainPopupSet menupopup {
+border:0 solid red!important
+}
