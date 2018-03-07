@@ -1,6 +1,6 @@
 /* zDark Context Menus */
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
-  padding:0 10px!important;}
+  padding:0 10px!important;
 
 /* Zoom Button 100% */
 background-color:#f00!important; 
