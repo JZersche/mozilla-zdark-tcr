@@ -1,7 +1,7 @@
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
 
 #main-window {
---toolbar-bgcolor:#31363b!important
+--toolbar-bgcolor:#282C30!important
 }
 
 #tabbrowser-tabs {
@@ -27,7 +27,7 @@ top:-1px
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:not([hidden="true"]) {
 margin-left:0!important;
-background-color:transparent!important;
+background-color:#0066aa!important;
 margin-top:0!important;
 border-top:0 solid #ff363b!important;
 display:inline-block;
@@ -36,11 +36,11 @@ border-top-right-radius:0!important
 
 #sidebar-splitter #appcontent {
 margin-left:0!important;
-background-color:blue!important
+background-color:CYAN!important
 }
 
 #browser-panel {
-background-color:#31363b!important
+background-color:#222!important
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover,#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
@@ -53,7 +53,7 @@ display:none
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar-header {
-background-color:red!important;
+background-color:LIME!important;
 border-bottom:1px solid red!important
 }
 
@@ -68,7 +68,7 @@ margin-left:0!important
 }
 
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar,#main-window[inFullscreen] #TabsToolbar {
-background-color:#11161b
+background-color:WHITE;
 }
 
 #main-window[privatebrowsingmode="temporary"] #tabbrowser-tabs,#main-window[inFullscreen] #tabbrowser-tabs {
@@ -82,9 +82,9 @@ visibility:collapse!important
 #main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
 display:none!important
 }
-
+/* Main Browser Bar Background Color */
 #navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar),.browserContainer > findbar,#browser-bottombox,#toolbar-menubar {
-background-color:#31363b!important
+background-color:rgb(40,44,48)!important;border:0px solid transparent !important;
 }
 
 #nav-bar-customization-target {
@@ -119,3 +119,10 @@ border-image-source:linear-gradient(transparent 4px,rgba(0,0,0,0.1) 4px,rgba(0,0
 border-image-slice:100%;
 border-image-slice:1
 }
+#navigator-toolbox::after {
+  content: ""; background: #303030 !important;
+  display: -moz-box;
+  border-bottom:1px solid #303030;
+}
+
+@namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
