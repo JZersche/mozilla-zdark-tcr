@@ -6,7 +6,7 @@
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
 padding:0 10px!important;
 background-color:red!important;
-border:0 solid #ffe1e1!important;
+border:0 solid #222!important;
 border-radius:6px!important
 }
 
