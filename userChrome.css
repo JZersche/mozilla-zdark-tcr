@@ -1,3 +1,5 @@
+@namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
+
 #main-window {
 --toolbar-bgcolor:#282C30!important
 }
