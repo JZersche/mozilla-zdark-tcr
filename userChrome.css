@@ -1,1 +1,129 @@
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
+
+#main-window {
+--toolbar-bgcolor:#282C30!important
+}
+
+#tabbrowser-tabs {
+visibility:collapse!important
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
+overflow:hidden!important;
+min-width:32px!important;
+max-width:32px!important;
+position:relative!important;
+top:89px!important;
+transition:all .2s ease!important;
+border-right:2px solid #0088eeff!important;
+z-index:2!important
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+position:relative;
+height:100.25%!important;
+top:-1px
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:not([hidden="true"]) {
+margin-left:0!important;
+background-color:#06a!important;
+margin-top:0!important;
+border-top:0 solid #ff363b!important;
+display:inline-block;
+border-top-right-radius:0!important
+}
+
+#sidebar-splitter #appcontent {
+margin-left:0!important;
+background-color:#0ff!important
+}
+
+#browser-panel {
+background-color:#222!important
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover,#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+min-width:210px!important;
+max-width:210px!important
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar-header,#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] ~ #sidebar-splitter {
+display:none
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar-header {
+background-color:LIME!important;
+border-bottom:1px solid red!important
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+height:calc(70vh - 16px);
+border-top:1px solid #272b2f!important;
+margin-top:0!important
+}
+
+#main-window[inFullscreen] #appcontent {
+margin-left:0!important
+}
+
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar,#main-window[inFullscreen] #TabsToolbar {
+background-color:#fff
+}
+
+#main-window[privatebrowsingmode="temporary"] #tabbrowser-tabs,#main-window[inFullscreen] #tabbrowser-tabs {
+visibility:visible!important
+}
+
+#main-window[inFullscreen][inDOMFullscreen] #tabbrowser-tabs {
+visibility:collapse!important
+}
+
+#main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
+display:none!important
+}
+
+#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar),.browserContainer > findbar,#browser-bottombox,#toolbar-menubar {
+background-color:#282c30!important;
+border:0 solid transparent!important
+}
+
+#nav-bar-customization-target {
+margin:0 2px
+}
+
+#window-controls {
+filter:invert(75%)
+}
+
+#nav-bar toolbarpaletteitem[id^="wrapper-customizableui-special-spring"],#nav-bar toolbarspring {
+-moz-box-flex:1!important
+}
+
+.findbar-button:hover {
+color:#ddd!important
+}
+
+.findbar-button[checked="true"]:not(:hover) {
+color:#fff!important
+}
+
+:root[uidensity="compact"] #nav-bar[brighttext] > #PanelUI-button {
+border-image-source:linear-gradient(transparent 4px,rgba(100%,100%,100%,.2) 44x,rgba(100%,100%,100%,.2) calc(100% - 4px),transparent calc(100% - 4px))
+}
+
+:root[uidensity="compact"] #PanelUI-button {
+margin-inline-start:3px;
+border-inline-start:1px solid;
+border-image:linear-gradient(transparent 4px,rgba(0,0,0,.1) 4px,rgba(0,0,0,.1) calc(100% - 4px),transparent calc(100% - 4px));
+border-image-source:linear-gradient(transparent 4px,rgba(0,0,0,0.1) 4px,rgba(0,0,0,0.1) calc(100% - 4px),transparent calc(100% - 4px));
+border-image-slice:100%;
+border-image-slice:1
+}
+
+#navigator-toolbox::after {
+content:"";
+background:#303030!important;
+display:-moz-box;
+border-bottom:1px solid #303030
+}
