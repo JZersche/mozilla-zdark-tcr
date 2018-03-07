@@ -1,11 +1,11 @@
-/* Add this to your userChrome.css file. */
+/* * * * Add this to your userChrome.css file * * * * /
 
+
+/* zDark Context Menus */
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
-/* Menus */
-
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
 padding:0 10px!important;
-background-color:red!important;
+background-color:#09f!important; /* Zoom 100% Button */
 border:0 solid #222!important;
 border-radius:6px!important
 }
