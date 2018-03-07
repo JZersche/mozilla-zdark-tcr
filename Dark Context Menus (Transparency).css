@@ -2,7 +2,17 @@
 
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
 
-/* zDark Context Menus */
+/* * * * * * * * * zDark Context Menus * * * * * * * * */
+
+:root {
+--browser-background:#38383d
+--uc-dark-bkgnd-color: #31363bcc !important;
+--uc-light-bkgnd-color:#31363b99;
+--uc-active-color:#404040;
+--uc-text-color:#c3c6c9;
+--uc-border-color:#31363b !important;
+}
+
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
 background-color:#06c!important;
 border:0 solid #ffe1e1!important;
@@ -16,10 +26,6 @@ color:#fff!important
 
 #widget-overflow-mainView > .panel-subview-body > toolbarseparator,.PanelUI-subView menuseparator,.PanelUI-subView toolbarseparator,.cui-widget-panelview menuseparator,.cui-widget-panel toolbarseparator {
 margin:0
-}
-
-:root {
---browser-background:#38383d
 }
 
 tabbrowser tabpanels {
@@ -47,13 +53,6 @@ border-color:hsl(240,3%,20%)!important
 color:#aaa!important
 }
 
-:root {
---uc-dark-bkgnd-color: #31363bcc !important;
---uc-light-bkgnd-color:#31363b99;
---uc-active-color:#404040;
---uc-text-color:#c3c6c9;
---uc-border-color:#31363b !important;
-}
 
 #mainPopupSet menupopup menuitem,#mainPopupSet menupopup menu {
 min-height:24px!important
