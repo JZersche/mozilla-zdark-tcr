@@ -14,14 +14,14 @@ border-radius:6px!important
 
 /* Right Click Menu */ :root {--uc-dark-bkgnd-color:#064e9d!important;}
 
-/* = Menu */ .panel-subview-body {overflow-y:auto;overflow-x:hidden;-moz-box-flex:1;padding:6px 0;background:#064e9d;}
+/* = Menu */ .panel-subview-body {overflow-y:auto;overflow-x:hidden;-moz-box-flex:1;padding:6px 0;background:#064e9d; background-image: url("https://i.imgur.com/4tlUOTz.png") !important;}
 
 /* = Menu Border */ :root {
 --uc-border-color: #064e9d !important} .panel-subviews,#mainPopupSet menupopup,
 #bookmarks-menu-button menu menupopup > hbox,
 .search-panel-header.search-panel-current-engine,
 .search-panel-current-input,panelview,.PanelUI-subView {
-border-top:3px solid #064e9d !important}
+border-top:0px solid #064e9d !important}
 
 .panel-subviews,#mainPopupSet menupopup,#bookmarks-menu-button menu menupopup > hbox,.search-panel-header.search-panel-current-engine,.search-panel-current-input,panelview,.PanelUI-subView {
 background-color:var(--uc-dark-bkgnd-color)!important;
