@@ -1,5 +1,5 @@
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
-
+/* Add this to your userChrome.css file. */
 /* zDark Context Menus */
 
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
