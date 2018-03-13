@@ -1,3 +1,9 @@
+/* THIS GOES IN (Custom CSS) SECTION OF THE (Tab Center Redux) SETTINGS */
+
+/* Tab Center Redux Modern B Theme by JZersche */
+/* Last Updated: 1:11:11pm 3/12/2018 */
+
+/**** Modern (Large) Theme Begin ****/ 
 body.dark-theme {
   overflow: hidden !important;
   --tab-background-normal: 210, 9.289%, 21.045%;
@@ -393,3 +399,4 @@ body.dark-theme {
 .tab-close:hover {
   border-radius: var(--border-radius);
 }
+/**** Modern (Large) End ****/ 
