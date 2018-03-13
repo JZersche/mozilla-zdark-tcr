@@ -146,7 +146,7 @@ body.dark-theme {
   background-image: url(https://i.imgur.com/95km9Jy.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: auto 27px;
+  background-size: auto 38px;
 }
 .tab.active:hover:not(.pinned) {
   background-image: linear-gradient(
@@ -158,19 +158,20 @@ body.dark-theme {
     #40464d 1.3%,
     #40464d 15%,
     #40464d 15%,
+    #40464d 70%,    
     #40464d 80%
   );
   border-bottom: 0 solid #2b2f34;
   border-left: 0 solid #444b52;
   height: 28px !important;
   color: #fff;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
 }
 .tab.active:hover:not(.pinned) > .tab-title-wrapper::after {
   --tab-background: var(--tab-background-normal);
   background-image: linear-gradient(to right, #0007 0%, #31363bff 100%);
   width: 206.5px !important;
-  height: 36px !important;
+  height: 38px !important;
   display: block !important;
   border-top: 0 solid red !important;
   border-bottom: 0 solid red !important;
@@ -201,7 +202,7 @@ body.dark-theme {
   background-size: auto 37px;
 }
 .tab:not(.active) > .tab-title-wrapper::after {
-  height: 37px !important;
+  height: 38px !important;
   display: block !important;
   border-top: 0 solid #262f34 !important;
   border-right: 1px solid #272727 !important;
@@ -327,6 +328,18 @@ body.dark-theme {
   border-bottom: 1px solid #2b2f34;
   position: relative;
   background-size: auto 37px !important;
+}
+.tab.active:hover:not(.pinned) {
+  display: flex; 
+  align-items: center; 
+  height: 38px !important; 
+  width: 200px !important; 
+  margin-left: 0px !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important; 
+  border-bottom: 0px solid #2b2f34; 
+  position: relative;
+	background-image: url(https://i.imgur.com/41ZNQ4m.png); 
 }
 #pinnedtablist:not(.compact) .tab,
 .tab.pinned {
