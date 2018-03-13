@@ -348,10 +348,10 @@ body.dark-theme {
   margin-left: 0.5px;
 }
 .tab-icon {
-  width: 20px;
-  height: 20px;
-  padding-top: 1px;margin-top:4px;
-  padding-bottom: 1px;
+  width: 19px;
+  height: 19px;
+  padding-top: 0px;margin-top:4px;
+  padding-bottom: 0px;
 }
 .tab-close,
 .tab-close:hover {
