@@ -1,11 +1,55 @@
-/* userChrome.css zDark TCR */
+/* userChrome.css zDark TCReBorn by JZersche */
+
+#sidebar-header {
+    display: none;
+}
+
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] {
+overflow:hidden!important;
+min-width:34px!important;
+max-width:34px!important;
+position:relative!important;
+top:89px!important;
+transition:all .2s ease!important;
+border-right:2px solid #0088eeff!important;
+z-index:2!important;
+}
+
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"]:hover, 
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] #sidebar{
+min-width:202px!important;
+max-width:202px!important
+}
+
 @namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
+
+#navigator-toolbox {
+margin-top:1px;
+--tabs-border-color: #f000!important;
+}
+
+
+/*
+#TabsToolbar {
+visibility:collapse!important
+}
+
+*/
+
 #main-window {
---toolbar-bgcolor:#282C30!important!!
+--toolbar-bgcolor:#282C30!important;
 }
 
 #tabbrowser-tabs {
-visibility:collapse!important
+background:#282C30;
+}
+#urlbar {
+background:#1f222200 !important;;
+border:1px solid #33383c00!important;
+}
+
+#pageAction-urlbar-reload-in-urlbar_exe-boss {
+filter:invert(100%)
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
@@ -22,12 +66,14 @@ z-index:2!important
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
 position:relative;
 height:100.25%!important;
-top:-1px
+top:-1px;
+min-width:207px!important;
+max-width:207px!important;
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:not([hidden="true"]) {
 margin-left:0!important;
-background-color:#06a!important;
+background-color:#282c30!important;
 margin-top:0!important;
 border-top:0 solid #ff363b!important;
 display:inline-block;
@@ -40,10 +86,10 @@ background-color:#0ff!important
 }
 
 #browser-panel {
-background-color:#222!important
+background-color:#f22!important;
 }
 
-#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover,#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover {
 min-width:210px!important;
 max-width:210px!important
 }
@@ -68,7 +114,7 @@ margin-left:0!important
 }
 
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar,#main-window[inFullscreen] #TabsToolbar {
-background-color:#fff
+background-color:#fff;
 }
 
 #main-window[privatebrowsingmode="temporary"] #tabbrowser-tabs,#main-window[inFullscreen] #tabbrowser-tabs {
@@ -82,11 +128,11 @@ visibility:collapse!important
 #main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
 display:none!important
 }
-
-#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar),.browserContainer > findbar,#browser-bottombox,#toolbar-menubar {
-background-color:#282c30!important;
-border:0 solid transparent!important
-}
+/* Browser Color */
+#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar),
+.browserContainer > findbar,#browser-bottombox,#toolbar-menubar{
+background-color:#282C30!important;border:0 solid transparent!important}
+#TabsToolbar-customization-target{background:#282C30!important;}
 
 #nav-bar-customization-target {
 margin:0 2px
@@ -128,55 +174,49 @@ display:-moz-box;
 border-bottom:1px solid #303030
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* zDark Context Menus */
-@namespace http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul;
 .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
 padding:0 10px!important;
-background-color:#09f!important; /* Zoom 100% Button */
+background-color:#09f!important;
 border:0 solid #222!important;
 border-radius:6px!important
 }
 
-/* File Menu */ menupopup:not([id="BMB_bookmarksPopup"]),#BMB_bookmarksPopup menupopup[placespopup=true] > hbox {background-color:#064e9d!important}
+menupopup:not([id="BMB_bookmarksPopup"]),#BMB_bookmarksPopup menupopup[placespopup=true] > hbox {
+background-color:#064e9d!important
+}
 
-/* Right Click Menu */ :root {--uc-dark-bkgnd-color:#064e9d!important;}
+:root {
+--uc-dark-bkgnd-color: rgba(49,54,59,0.975);
+--uc-light-bkgnd-color:#ff0;
+--uc-active-color:#404040;
+--uc-text-color:#c3c6c9;
+--uc-border-color:#767676
+}
 
-/* = Menu */ .panel-subview-body {overflow-y:auto;overflow-x:hidden;-moz-box-flex:1;padding:6px 0;background:#064e9d;}
+.panel-subview-body {
+overflow-y:auto;
+overflow-x:hidden;
+-moz-box-flex:1;
+padding:6px 0;
+background:#282C30;
+background-image:url()!important;
+}
 
-/* = Menu Border */ :root {
---uc-border-color: #064e9d !important} .panel-subviews,#mainPopupSet menupopup,
-#bookmarks-menu-button menu menupopup > hbox,
-.search-panel-header.search-panel-current-engine,
-.search-panel-current-input,panelview,.PanelUI-subView {
-border-top:3px solid #064e9d !important}
+
+/** Context Menu Border **/
+:root {
+--uc-border-color:#fff3!important
+}
+
+#navigator-toolbox::after {
+content:"";
+display:-moz-box;
+border-bottom:0 solid var(--chrome-content-separator-color)!important
+}
 
 .panel-subviews,#mainPopupSet menupopup,#bookmarks-menu-button menu menupopup > hbox,.search-panel-header.search-panel-current-engine,.search-panel-current-input,panelview,.PanelUI-subView {
-background-color:var(--uc-dark-bkgnd-color)!important;
+border-top:0 solid #064e9d!important;
+background-color:var(--uc-dark-bkgnd-color)!important
 }
 
 panelview {
@@ -187,18 +227,57 @@ color:#fff!important
 background-color:#06a!important
 }
 
-menupopup:not([id="BMB_bookmarksPopup"]),#BMB_bookmarksPopup menupopup[placespopup=true] > hbox {
--moz-appearance:none!important;
-border-radius:0!important;
-font-weight:400!important;
-border:0 dotted #0066aacc!important;
-border-left:0!important;
-border-top:0 solid #09f!important;
-border-radius:0!important;
-box-shadow:0 0 0 rgba(0,0,0,0) inset,0 0 6px hsla(0,0%,0%,0)!important;
-background-image:linear-gradient(to bottom,#5555,#2222)!important;
-padding-bottom:0!important;
-padding-top:0!important
+menupopup:not([id="BMB_bookmarksPopup"]),
+#BMB_bookmarksPopup menupopup[placespopup=true] > hbox
+{
+  -moz-appearance: none !important;
+  border-radius: 6px !important;
+  font-weight: normal !important;
+  border: 0px dotted #09f !important;
+  border-left: 0 !important;
+  border-top: 0px solid #09f !important;
+  box-shadow: 0 0px 0 rgba(0,0,0,0) inset,
+        0 0 6px hsla(0,0%,0%,0) !important;
+  background-color: rgb(49,54,59) !important;
+  background-image: linear-gradient(to bottom,
+                rgba(30,30,30,0.0),
+                rgba(30,30,30,0.0)
+                ) !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+menuseparator
+{
+  -moz-appearance: none !important;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border-top: 0px solid !important;
+  border-bottom: 0px solid !important;
+  height: 0px !important;
+  background: linear-gradient(to right, #151515 0%, #151515 100%), linear-gradient(to right, #303030 0%, #303030 100%) !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-size: 100% 0px , 100% 0px !important;
+  background-position: top center, bottom center !important;
+  background-color: transparent !important;
+}
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up, arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-down {
+    -moz-appearance: none;
+    border: 0px solid transparent;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline-start: 1px;
+    padding-inline-end: 1px;
+    filter: invert(100 );
+    background: #fff1;
+}
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover, arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-down:not([disabled="true"]):hover {
+    margin: 1px;
+    border: 0px inset ThreeDFace !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline-start: 1px;
+    padding-inline-end: 1px;
+    background: #fff1;
 }
 
 menu,menuitem,.splitmenu-menuitem {
@@ -207,11 +286,12 @@ color:#a5a5a5
 }
 
 #mainPopupSet menupopup menuitem:hover {
-background-color:#06a!important
+background-color:#06a!important;
+border-radius:8px !important;
 }
-
+#mainPopupSet menupopup menuitem:nth-of-type(1):hover {}
 #mainPopupSet menupopup menu:hover {
-background-color:#09f!important
+background-color:#282c30!important
 }
 
 #widget-overflow-mainView > .panel-subview-body > toolbarseparator,.PanelUI-subView menuseparator,.PanelUI-subView toolbarseparator,.cui-widget-panelview menuseparator,.cui-widget-panel toolbarseparator {
@@ -359,6 +439,7 @@ menuitem[default="true"] {
 font-weight:400!important
 }
 
+/** Context Menu Items **/
 menu[_moz-menuactive="true"],menuitem[_moz-menuactive="true"],.splitmenu-menuitem[_moz-menuactive="true"] {
 margin-bottom:0;
 border-radius:0;
@@ -411,6 +492,65 @@ margin-left:10px;
 margin-right:10px
 }
 
-.panel-subviews,#mainPopupSet menupopup {
-border:0 solid red!important
+/** Context Menu Border Radius **/
+.panel-subviews, #mainPopupSet menupopup {
+    border: 0px solid #f00;
+    border-radius:8px !important;
 }
+
+.panel-arrowcontent, #placesContext, #alltabs-popup .arrowscrollbox-scrollbox, #contentAreaContextMenu, .textbox-contextmenu, #mainPopupSet menupopup, #bookmarks-menu-button menu menupopup {
+
+    border: 1px solid var(--uc-border-color) !important;
+    color: var(--uc-text-color) !important;
+
+}
+
+.tab-label {
+white-space:nowrap;
+background:transparent!important
+}
+
+.tab-label-container {
+overflow:hidden;
+background:transparent!important
+}
+
+.bookmark-item > .toolbarbutton-text {
+margin-top:-1px!important
+}
+
+.bookmark-item {
+margin:-1px!important
+}
+
+.bookmark-item:not([container]):not([open="true"]) > .toolbarbutton-text {
+display:none!important
+}
+
+.bookmark-item:not([container]):not([open="false"]):hover > .toolbarbutton-text {
+display:block!important;
+background:transparent!important
+}
+
+.bookmark-item:not([container]):not([open="false"]):hover > .toolbarbutton-icon[label]:not([label=""]) {
+margin-inline-end:0!important;
+background:transparent!important
+}
+
+.bookmark-item:not([container]):hover {
+margin-inline-end:0!important;
+background:#067aa!important
+}
+
+.active .tab-loading-burst, /*.tab.active,*/ .tab.active:hover {
+color: #0f0f;padding-right:10px!important;diplay:block!important;
+background:#0000;
+border-left:6px solid #fff0;
+transition: 1000ms ease-in-out !important;
+height:0px;
+}
+
+.active .tab-loading-burst {
+top:10px;left:200px;border-radius:10px;
+}
+
