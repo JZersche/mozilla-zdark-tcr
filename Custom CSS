@@ -1,0 +1,314 @@
+html, body
+{
+width:196px !important;
+}
+
+/* Tab Center ReBoRn Modern Theme by JZersche */
+/* Last Updated: 1:11:11pm 4/30/2019 */
+
+/**** Modern Theme Begin ****/ 
+body.dark-theme {
+  --background: #282C30;
+  overflow: hidden !important;
+  --tab-background-normal: 250, 1.289%, 1.045%;
+  --tab-background-pinned: 210, 100%, 50.045%;
+  --tab-background-active: 210, 9.289%, 21.045%;
+  --tab-background-hover: #ff363b;
+  --tab-border-color: #2b2f34;
+    --tab-selected-line: #0000;
+  --menu-background: hsl(210, 9.289%, 21.045%);
+  --menu-button-hover: #09f;
+  --searchbox-background: #2b3034;
+}
+#searchbox-input {
+  background-color: var(--searchbox-background);
+color:#fff6;
+text-decoration:none;
+
+!important;
+font-style:normal!important;
+font-size:13px!important;
+position:relative;
+top:2px;height:13px;
+}
+#searchbox-icon {
+fill:#4d5055;
+}
+
+#searchbox {
+  border: 1px solid #25282b !important;
+  background-color: #2b3034;
+}
+.tab.pinned.active {
+//border:none!important;
+//box-shadow:none!important;
+//background:red!important;
+}
+
+.tab.active:not(.pinned) {
+  background: linear-gradient(
+    to right,
+    #0099ffff 0%,
+    #0099ffff 0.65%,
+    #40464d 0.65%,
+    #40464d 1.3%,
+    #40464d 1.3%,
+    #40464d 15%,
+    #40464d 15%,
+    #40464d00 100%
+  );
+  border-bottom: 0 solid #2b2f34;
+  border-left: 0 solid #444b52;
+  height: 18px !important;
+  color: #fff;
+  padding-left: 4px !important;
+  background-image: url(https://i.imgur.com/95km9Jy.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 20px;
+padding-left:3px !important;
+}
+.tab.active:hover:not(.pinned) /* Tab Hover */ {
+  background-image: linear-gradient(
+    to right,
+    #09f 0%,
+    #09f 0.65%,
+    #40464d 0.65%,
+    #40464d 1.3%,
+    #40464d 1.3%,
+    #40464d 15%,
+    #40464d 15%,
+    #40464d 70%,
+    #40464d 80%
+  );
+  border-bottom: 0 solid #2b2f34;
+  border-left: 0 solid #444b52;
+  height: 18px !important;
+  color: #fff; /* Active Tab Text Color Hover */
+  padding-left: 3px !important;
+}
+.tab:not(.pinned):not(.active) {
+  display: flex;
+  align-items: center;
+  height: 18px !important;
+  width: 200px !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important;
+  border-bottom: 0 solid #2b2f34;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #006bbcff 0.55%,
+    #31363bff 0.6%,
+    #31363bff 90%,
+    #ffffff00 100%
+  );
+  background-image: url(https://i.imgur.com/41ZNQ4m.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 20px;
+}
+
+.tab:not(.pinned):not(.active):hover {
+  display: flex;
+  align-items: center;
+  height: 18px !important;
+  width: 200px !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important;
+  border-bottom: 0 solid #2b2f34;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #006bbcff 0.55%,
+    #31363bff 0.6%,
+    #31363bff 90%,
+    #ffffff00 100%
+  );
+  background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAAaCAIAAACCS/YmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHoGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNy0xMS0wOFQwNjo1NDowNy0wNTowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNy0xMS0wOFQwOToxODo0OS0wNTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTctMTEtMDhUMDk6MTg6NDktMDU6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTUyM2YyNmYtNWYxZS1hZjQzLTljNGItNzQ2NjllODFkMjQ5IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Y2FlZWMzODYtMWEwMy1mZTRiLWFjNDItNjIwZTY1MWU0ZDlhIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YzVkNThlNWEtZWI5Ny00NTQxLTkzOWItMzVkYjU1MWM1OTk5IiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjNWQ1OGU1YS1lYjk3LTQ1NDEtOTM5Yi0zNWRiNTUxYzU5OTkiIHN0RXZ0OndoZW49IjIwMTctMTEtMDhUMDY6NTQ6MDctMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjhjZjBlZDM4LTQ5YTAtYzc0NC05ZWQ4LTk1YTI4YjgwNWZiMCIgc3RFdnQ6d2hlbj0iMjAxNy0xMS0wOFQwNjo1NDowNy0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NTUyM2YyNmYtNWYxZS1hZjQzLTljNGItNzQ2NjllODFkMjQ5IiBzdEV2dDp3aGVuPSIyMDE3LTExLTA4VDA5OjE4OjQ5LTA1OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT5hZG9iZTpkb2NpZDpwaG90b3Nob3A6NWFhOTY5MmItY2FlMy0xMDRkLTlmZDQtMGVhNjg1NmY4ZmE5PC9yZGY6bGk+IDxyZGY6bGk+YWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmE2M2NkYWQxLWU4MjgtMDI0Ni05YWNmLTFhYzYyYjA0NzAyMzwvcmRmOmxpPiA8L3JkZjpCYWc+IDwvcGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pis+LJsAAAOSSURBVHic7ZrdctQwDIXPcUILPEHfmkfk55J7YGC7FhexHflnE++2qdupvhm2jqM4iq0jecPy4cs3AJ9/fD25T2d8OPH+0d2deHfG7Dl7TgInIAzDOIZ5+UMu/0ASJAGCiNozCRrGcSQRksSiP8ajBYBWCQ3jOIIIg+KS8HIRWi00jOOIlRDLfjTsQ0mGXhOhYRxMqoSrzmKTBGSET13Inmtkw4bxKdOp2qx54cbghT0tYRnXEUUIqhczWCILWFR4gBJviNRdYfTY1509PdvjFPbX+rnLu1W1yJrgtichWabP7VN1QxsfSp27ybQdBSDpk5SoR9nbi75UiKyzU0T5zQX7TQX3W5TiE/NR+E7U8eDasrBvnqobzcMj0LeIbf12lFBqJCQPbt1mR/+zcykd3LzSnRdqkW88oJQG7eSwkUH2kn3bu1cjzpDXX+t3mCc69ozPxTJYZgD3/k94HRPqHwBAJPzfYWP5RQ/Rcddu063cKXm8FuLfONzuYRy8aOv7XjrVdLLRvDCg5JmldUFj6lqTqb/rpo3WE+n/rlvsGEvDKj0N4MqIbbIulJSTc70vujHPeER4GSNRiAAkVsIiUPKxsoWJYd1Yrd09rRqjFkzjaX01/sbhds+lao9u4d1G04HltvVGIy+wuXU2wqWN1m10DlKaNafx+SEgT8g1t9c2BrHcPEaRrsJ29B/vSTqQIOEdRCAkCA9OFJ28kx/VVmp9n7p8umDCpgzr8qUuXUm/FIj2mYHWSV1VXH7WKRvtVlHrCnfrCKNagEuD9FMvZD0t+oVB8S636HzJgqM9L/Jmq3Mt0bzopnTn6zBkp3F7Ra6brHpf0J8CmvYMRTWI8Kf/NUHOoOd0xnTmBA/vJoEg/GImhloINsYDFawkxIMufAKEF0yABxxEQIGApOirRSCAc/CCcNF5HRCA+JgcfHgekeymEGRpgoCPjjnAx04tFa2ctTNEx3LHKAAJj5ZvQsJjFsMiXL67KMtclKJdfID6iVIamWAuzuy2zcTRDJG6zK6dDGugJ6e4qsg7ur9IcGr8UlncsdnekdT3l8w2pupW9kyNFHth2SVu4yii836aZAlbvywMlkXR5aG1KVid1CVQUrjNj5gnnB5+f4dhGCNwox0wjPeOidAwBuMA/HUfR7thGO8Xq4SGMRgToWEMxkRoGIMxERrGYEyEhjEYE6FhDMZEaBiDMREaxmBMhIYxmP8jO3IlnuUBbwAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 20px;
+}
+
+
+.tab:not(.pinned),
+.tab.active:hover:not(.pinned) {
+  display: flex;
+  align-items: center;
+  height: 18px !important;
+  width: 200px !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important;
+  border-bottom: 0px solid #2b2f34;
+  position: relative;
+}
+.tab.active:hover:not(.pinned) {
+  display: flex;
+  align-items: center;
+  height: 18px !important;
+  width: 200px !important;
+  margin-left: 0px !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important;
+  border-bottom: 0px solid #2b2f34;
+  position: relative;
+  background-image: url(https://i.imgur.com/41ZNQ4m.png);
+opacity:0.5;
+}
+#topmenu {
+  display: flex;
+  padding: 6px 6px;
+  height: 32px;
+  border-bottom: 0 !important;
+//width: 207px;
+width:209px;
+  background-image: linear-gradient(
+      to left,
+      hsla(0, 35%, 10%, 0) 60%,
+      hsla(0, 0%, 0%, 0.1) 17%,
+      transparent 0%
+    ),
+    linear-gradient(to left, #282C30 0%, #282C30 70%, #282C30 100%);
+  background-position: -7px 0;
+  background-repeat: no-repeat;
+  transition: background-position 190ms ease-out;
+background-color:transparent;
+}
+#newtab-label {
+  margin-left: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: NONE;
+  position: relative;
+  left: 6px !important;
+  top: -1px;
+  font-family: "Segoe UI";
+  font-size: 1em;
+}
+#newtab {
+  margin: 0;
+  margin-left: -1.8px;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 20 auto;
+  width: 20px !important;
+  align-items: center;
+  padding: 2px 4.8px;
+  text-shadow: var(--menu-button-text-shadow);
+  border: 0 solid #272b2e !important;
+  background: #0099ff00;
+  border-radius: 100px;
+}
+.tab-context {
+  min-width: 4.5px;
+  height: 100%;
+  background-image: none !important;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-position 999ms ease-out;
+}
+#tablist-wrapper {
+  height: 94.35% !important;
+  width: 295px !important;
+  flex-direction: column;
+  overflow-y: visible;
+  border: 0 solid red !important;
+  background: transparent;
+}
+.tab-icon {
+  width: 16px;
+  height: 16px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.tab:hover > .tab-close {
+  opacity: 0;
+}
+.tab-close:hover {
+  border-radius: var(--border-radius);
+}
+.tab-close,
+.tab-close:hover {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 17px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    #ff000000 0%,
+    #ffff0000 100%
+  ) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  opacity: 0;
+  z-index: 0 !important;
+}
+#tablist-wrapper #pinnedtablist {
+  background: YELLOW !important;
+  background-image: url(https://i.imgur.com/GlbnLiz.YELLOW-png) !important;
+  background-repeat: repeat-y;
+  background-size: 1px 24px !important;
+}
+#tablist-wrapper.shrinked #tablist .tab-meta-image.tab-meta-image {
+  background: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin-left: 0.5px;
+}
+
+
+
+#pinnedtablist:not(.compact) .tab,
+#tablist .tab {
+    padding: 2px 2px;
+    transition: box-shadow 0.2s ease;
+min-height:20px;
+}
+
+
+#tablist {
+
+scrollbar-width: none;
+}
+
+
+
+
+.active .tab-loading-burst {
+ 
+height: 1px; 
+border-width: 0 0 0 200px;
+border-style: solid;
+border-image: linear-gradient(to right, #0000 0% 0%, #0000 75% 75%, #fff7 160% 160%) 0% 100%;  
+transition: border-left 500ms;top:9px;
+
+}
+
+
+
+#settings-icon {
+    flex-shrink: 0;
+    padding: 0 12px;
+    background-size: 15px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img/settings.svg");
+    -moz-context-properties: fill;
+    fill: var(--icons);
+    filter: url("img/filters.svg#fill");
+    position: relative;
+    top: -3px;
+}
