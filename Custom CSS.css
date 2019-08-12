@@ -1,48 +1,89 @@
 html, body
 {
-width:196px !important;
+width:186px !important;
 }
 
-/* Tab Center ReBoRn Modern Theme by JZersche */
-/* Last Updated: 1:11:11pm 4/30/2019 */
+/* Tab Center ReBOrn Modern Theme by JZersche */
+/* Last Updated: 11:32:56pm 8/11/2019 */
 
 /**** Modern Theme Begin ****/ 
-body.dark-theme {
+body {
   --background: #282C30;
   overflow: hidden !important;
   --tab-background-normal: 250, 1.289%, 1.045%;
   --tab-background-pinned: 210, 100%, 50.045%;
   --tab-background-active: 210, 9.289%, 21.045%;
-  --tab-background-hover: #ff363b;
-  --tab-border-color: #2b2f34;
-    --tab-selected-line: #0000;
+  --tab-background-hover: #22363b;
+  --tab-border-color: #222f34;
+  --tab-selected-line: #0000;
   --menu-background: hsl(210, 9.289%, 21.045%);
   --menu-button-hover: #09f;
   --searchbox-background: #2b3034;
 }
-#searchbox-input {
-  background-color: var(--searchbox-background);
-color:#fff6;
-text-decoration:none;
 
-!important;
-font-style:normal!important;
-font-size:13px!important;
-position:relative;
-top:2px;height:13px;
+#tablist .tab:not(.pinned), #pinnedtablist:not(.compact) .tab {
+  height: var(--tab-height-normal);
+  max-height: var(--tab-height-normal);
+  border-bottom: 1px solid #4a4a4f;
+  position: relative;
 }
+#tablist-wrapper.shrinked #tablist .tab-meta-image.tab-meta-image {
+  background: none !important;
+  position: relative;
+  top: -2px;
+  left:-2px!important;
+}
+#newtab-icon {
+  width: 16px;
+  height: 16px;
+  filter: invert(100)!important;
+}
+
+#settings-icon {
+  flex-shrink: 0;
+  padding: 0 12px;
+  background-size: 15px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("img/settings.svg");
+  -moz-context-properties: fill;
+  fill: var(--icons);
+  filter: url("img/filters.svg#fill");
+  position: relative;
+  top: -2px;
+  left: -8px;
+  filter:invert(100)!important;
+}
+
+#settings {
+  width: 19px !important;
+  left: -3px !important;
+  position: relative !important;
+  display: block !important;
+  min-width: 10px !important;
+}
+
+#searchbox-input {
+  background-color: #0000!important;
+  color:#fff;
+  text-decoration:none !important;
+  border:1px solid #383c40 !important;
+  border-radius: 3px !important;
+  font-style:normal!important;
+  font-variant:all-small-caps;
+  font-size:13px!important;
+  position:relative;display:block!important;
+  top:-4px;min-width:130px;height:27px;
+  padding-top: 2px;
+}
+
 #searchbox-icon {
-fill:#4d5055;
+  fill:#4d5055;
 }
 
 #searchbox {
   border: 1px solid #25282b !important;
   background-color: #2b3034;
-}
-.tab.pinned.active {
-//border:none!important;
-//box-shadow:none!important;
-//background:red!important;
 }
 
 .tab.active:not(.pinned) {
@@ -66,27 +107,9 @@ fill:#4d5055;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: auto 20px;
-padding-left:3px !important;
+  padding-left:4px !important;
 }
-.tab.active:hover:not(.pinned) /* Tab Hover */ {
-  background-image: linear-gradient(
-    to right,
-    #09f 0%,
-    #09f 0.65%,
-    #40464d 0.65%,
-    #40464d 1.3%,
-    #40464d 1.3%,
-    #40464d 15%,
-    #40464d 15%,
-    #40464d 70%,
-    #40464d 80%
-  );
-  border-bottom: 0 solid #2b2f34;
-  border-left: 0 solid #444b52;
-  height: 18px !important;
-  color: #fff; /* Active Tab Text Color Hover */
-  padding-left: 3px !important;
-}
+
 .tab:not(.pinned):not(.active) {
   display: flex;
   align-items: center;
@@ -108,6 +131,7 @@ padding-left:3px !important;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: auto 20px;
+  color:#fff;
 }
 
 .tab:not(.pinned):not(.active):hover {
@@ -157,15 +181,16 @@ padding-left:3px !important;
   border-bottom: 0px solid #2b2f34;
   position: relative;
   background-image: url(https://i.imgur.com/41ZNQ4m.png);
-opacity:0.5;
+  opacity:0.5;
 }
+
 #topmenu {
   display: flex;
   padding: 6px 6px;
   height: 32px;
   border-bottom: 0 !important;
 //width: 207px;
-width:209px;
+  width:209px;
   background-image: linear-gradient(
       to left,
       hsla(0, 35%, 10%, 0) 60%,
@@ -176,7 +201,7 @@ width:209px;
   background-position: -7px 0;
   background-repeat: no-repeat;
   transition: background-position 190ms ease-out;
-background-color:transparent;
+  background-color:transparent;
 }
 #newtab-label {
   margin-left: 0 !important;
@@ -221,10 +246,10 @@ background-color:transparent;
   background: transparent;
 }
 .tab-icon {
-  width: 16px;
-  height: 16px;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  width: 15px;
+  height: 15px;
+  padding-top: 1p0;
+  padding-bottom: 0px;
 }
 
 .tab:hover > .tab-close {
@@ -233,8 +258,7 @@ background-color:transparent;
 .tab-close:hover {
   border-radius: var(--border-radius);
 }
-.tab-close,
-.tab-close:hover {
+.tab-close, .tab-close:hover {
   position: absolute;
   display: block;
   width: 24px;
@@ -267,48 +291,31 @@ background-color:transparent;
   height: 20px !important;
   width: 20px !important;
   margin-left: 0.5px;
+  /*! top: 10px !important; */
+  position: relative;
+  top: -2px;
+  left: -2px;
 }
 
 
 
-#pinnedtablist:not(.compact) .tab,
-#tablist .tab {
-    padding: 2px 2px;
-    transition: box-shadow 0.2s ease;
-min-height:20px;
+#pinnedtablist:not(.compact) .tab, #tablist .tab {
+  padding: 2px 2px;
+  transition: box-shadow 0.2s ease;
+  min-height:20px;
 }
-
 
 #tablist {
-
 scrollbar-width: none;
 }
 
-
-
-
 .active .tab-loading-burst {
- 
-height: 1px; 
-border-width: 0 0 0 200px;
-border-style: solid;
-border-image: linear-gradient(to right, #0000 0% 0%, #0000 75% 75%, #fff7 160% 160%) 0% 100%;  
-transition: border-left 500ms;top:9px;
-
+  height: 1px; 
+  border-width: 0 0 0 200px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #0000 0% 0%, #0000 75% 75%, #fff7 160% 160%) 0% 100%;  
+  transition: border-left 500ms;top:9px;
 }
 
 
 
-#settings-icon {
-    flex-shrink: 0;
-    padding: 0 12px;
-    background-size: 15px 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("img/settings.svg");
-    -moz-context-properties: fill;
-    fill: var(--icons);
-    filter: url("img/filters.svg#fill");
-    position: relative;
-    top: -3px;
-}
