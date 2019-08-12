@@ -1,4 +1,4 @@
-<h3>Branch: Reborn</h3>
+<h3>Branch: ReBorn</h3>
 <h6>This is the updated version of the zDark theme for ariasunni's updated Tab Center (Reborn) Add-On.</h6><br><br><h6>Design Notes</h6>
 
 <b>Base Color: </b><a href="http://www.color-hex.com/color/31363b">#31363b</a><br>
@@ -15,7 +15,7 @@ Install the Tab Center REBORN Add-on for Firefox 67+.</a>
 
 Once installation is successfully completed, type <b>about:addons</b> into the address bar. <br>Press <i>Enter</i> to open the <b>Add-ons Manager</b>. ─ Locate <b>Tab Center Reborn</b> in the list of <b>Add-ons</b>, and select <b>Options</b>. 
 
-<i>Tab Center Redux Settings:</i>
+<i>Tab Center ReBorn Settings:</i>
 1. Enable the Dark Theme
 2. Set Compact to 'Always'
 3. Enable Compact Pinned Tabs
