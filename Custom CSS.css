@@ -4,7 +4,7 @@ width:186px !important;
 }
 
 /* Tab Center ReBOrn Modern Theme by JZersche */
-/* Last Updated: 11:32:56pm 8/11/2019 */
+/* Last Updated: 14:32:56 10/17/2019 */
 
 /**** Modern Theme Begin ****/ 
 body {
@@ -67,14 +67,14 @@ body {
   background-color: #0000!important;
   color:#fff;
   text-decoration:none !important;
-  border:1px solid #383c40 !important;
+  border:0px solid #383c40 !important;
   border-radius: 3px !important;
   font-style:normal!important;
   font-variant:all-small-caps;
   font-size:13px!important;
   position:relative;display:block!important;
-  top:-4px;min-width:130px;height:27px;
-  padding-top: 2px;
+  top:0px;min-width:120px;height:16px;
+  padding-top: 0px;
 }
 
 #searchbox-icon {
@@ -114,7 +114,7 @@ body {
   display: flex;
   align-items: center;
   height: 18px !important;
-  width: 200px !important;
+  width: 210px !important;
   margin-left: 0 !important;
   margin-bottom: 0 !important;
   padding-right: 0 !important;
@@ -138,7 +138,7 @@ body {
   display: flex;
   align-items: center;
   height: 18px !important;
-  width: 200px !important;
+  width: 210px !important;
   margin-left: 0 !important;
   margin-bottom: 0 !important;
   padding-right: 0 !important;
@@ -163,7 +163,7 @@ body {
   display: flex;
   align-items: center;
   height: 18px !important;
-  width: 200px !important;
+  width: 215px !important;
   margin-left: 0 !important;
   margin-bottom: 0 !important;
   padding-right: 0 !important;
@@ -174,7 +174,7 @@ body {
   display: flex;
   align-items: center;
   height: 18px !important;
-  width: 200px !important;
+  width: 215px !important;
   margin-left: 0px !important;
   margin-bottom: 0 !important;
   padding-right: 0 !important;
@@ -190,7 +190,7 @@ body {
   height: 32px;
   border-bottom: 0 !important;
 //width: 207px;
-  width:209px;
+  width:217px;
   background-image: linear-gradient(
       to left,
       hsla(0, 35%, 10%, 0) 60%,
@@ -246,9 +246,10 @@ body {
   background: transparent;
 }
 .tab-icon {
-  width: 15px;
-  height: 15px;
-  padding-top: 1p0;
+margin-top:2px;
+  width: 16px;
+  height: 16px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
@@ -311,11 +312,8 @@ scrollbar-width: none;
 
 .active .tab-loading-burst {
   height: 1px; 
-  border-width: 0 0 0 200px;
+  border-width: 0 0 0 215px;
   border-style: solid;
   border-image: linear-gradient(to right, #0000 0% 0%, #0000 75% 75%, #fff7 160% 160%) 0% 100%;  
   transition: border-left 500ms;top:9px;
 }
-
-
-
